@@ -4,6 +4,7 @@ import { Product } from './components/Product/Product';
 import MOCK_BOOK from './Data/MockBooks';
 import Book from './model/Book';
 import HookCounter from './components/HookCounter/HookCounter';
+import { HookArray } from './components/HookArray/HookArray';
 
 // export class App extends React.Component {
 
@@ -107,6 +108,8 @@ export const App = () => {
             }
             <button onClick={ChangePrice}>Change Price</button>
             <HookCounter />
+            <hr />
+            <HookArray />
         </div>
     );
 }
