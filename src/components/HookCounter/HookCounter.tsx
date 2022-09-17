@@ -1,4 +1,6 @@
-import { Component, ReactNode } from 'react'
+import React, { Component, ReactNode } from 'react';
+
+import styles from './HookConter.module.scss'
 
 // const HookCounter = () => {
 
@@ -31,10 +33,10 @@ class HookCounter extends Component<any, any> {
 
     render(): ReactNode {
         return (
-            <div>
-                <h2>Count : {this.state.count}</h2>
-                <button onClick={this.addCount.bind(this)}>Add One</button>
-            </div>
+            <React.Fragment>
+                <h2>Hook Count : {this.state.count}</h2>
+                <button className={styles.button} onClick={this.addCount.bind(this)}>Add One</button>
+            </React.Fragment>
         );
     }
 }
